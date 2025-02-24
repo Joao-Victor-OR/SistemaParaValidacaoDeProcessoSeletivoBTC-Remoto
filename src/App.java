@@ -8,7 +8,23 @@ public class App {
         analisarCandidato(2400);
         analisarCandidato(2000);
         */
+        /* 
         selecaoCandidatos();
+        */
+        imprimirSelecionados();
+    }
+    static void imprimirSelecionados(){
+        String[] candidatos = {"Felipe", "Marcia", "Julia", "Paulo", "Augusto"};
+        System.out.println("imprimindo a lista de candidatos informando o indice do elemento");
+
+        for(int indice = 0; indice < candidatos.length; indice++){
+            System.out.println("O candidato de nº " + (indice + 1) + "é o " + candidatos[indice]);
+        }
+        System.out.println("Forma abreviada de interação for each");
+
+        for(String candidato: candidatos){
+            System.out.println("O candidato selecionado foi " + candidato);
+        }
     }
     static void selecaoCandidatos(){
         String[] candidatos = {"Felipe", "Marcia", "Julia", "Paulo", "Augusto", "Monica", "Fabricio", "Mirela", "Daniela", "Jorge"};
